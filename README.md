@@ -1,6 +1,8 @@
 # Offcanvas Muscle
 An offcanvas menu with vanilla javascript and CSS transitions. Looking for a simple and clean solution to create offcanvas left and right menus, we decide to create this little framework, feel free to expand and collaborate. It just works!
 
+<a href='http://owak.co/staging/offcanvas-muscle/' target="_blank">See our Demo</a>
+
 ## Usage
 #### Files
 Include in your code the following files:
