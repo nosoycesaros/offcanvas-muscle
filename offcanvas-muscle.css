@@ -35,7 +35,7 @@ body {
     left: 25%;
 }
 
-.site-wrap {
+.offcanvas-site-wrap {
     min-width: 100%;
     min-height: 100%;
     position: relative;
@@ -45,13 +45,13 @@ body {
     z-index: 1;
 }
 
-.site-wrap.open.left {
+.offcanvas-site-wrap.open.left {
     left: 75%;
 }
-.site-wrap.open.right {
+.offcanvas-site-wrap.open.right {
     left: -75%;
 }
 
-.site-wrap, .offcanvas {
+.offcanvas-site-wrap, .offcanvas {
     transition: left 0.4s;
 }

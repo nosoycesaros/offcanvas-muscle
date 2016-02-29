@@ -1,3 +1,5 @@
+# PENDANT TO UPDATE
+
 # Offcanvas Muscle
 An offcanvas menu with vanilla javascript and CSS transitions. Looking for a simple and clean solution to create offcanvas left and right menus, we decide to create this little framework, feel free to expand and collaborate. It just works!
 

@@ -1,25 +1,38 @@
-function offcanvasMuscle() {
-    var triggers = document.getElementsByClassName('offcanvas-trigger');
+var OffcanvasMuscle = window.OffcanvasMuscle = (function(window, document, undefined) {
 
-    for (var i = 0; i < triggers.length; i++) {
-        triggers[i].addEventListener("click", function() {
-            var targetMenu = this.getAttribute('offcanvas-menu');
-            toggleOffcanvasMuscleMenu(targetMenu);
-        });
-    }
-}
+  'use strict';
 
-function toggleOffcanvasMuscleMenu(menuId) {
-    var myMenu = document.getElementById(menuId);
+  var OffcanvasMuscle = function(object) {
+    this.menuSelector = object.menu;
+    this.menuElement = document.getElementById(object.menu);
+    this.triggerElement = document.getElementById(object.button);
 
-    myMenu.classList.toggle('open');
+    this.attachEvents();
+  }
 
-    var siteWrap = document.getElementsByClassName('site-wrap')[0];
-    siteWrap.classList.toggle('open');
+  OffcanvasMuscle.prototype = {
+    attachEvents: function() {
+      let _self = this;
+      this.triggerElement.addEventListener("click", function() {
+        _self.toggleMenu();
+      });
+    },
 
-    if (myMenu.classList.contains('left'))
+    toggleMenu: function() {
+      // Open the menu element
+      this.menuElement.classList.toggle("open");
+      // Slide the site wrap
+      var siteWrap = document.getElementsByClassName('offcanvas-site-wrap')[0];
+      siteWrap.classList.toggle('open');
+
+      if (this.menuElement.classList.contains('left'))
         siteWrap.classList.toggle('left');
 
-    if (myMenu.classList.contains('right'))
+      if (this.menuElement.classList.contains('right'))
         siteWrap.classList.toggle('right');
-}
+    }
+  }
+
+  return OffcanvasMuscle;
+
+})(window, document, window.OffcanvasMuscle);
