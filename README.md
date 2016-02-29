@@ -6,8 +6,10 @@ An offcanvas menu with vanilla javascript and CSS transitions. Looking for a sim
 ## Usage
 #### Files
 Include in your code the following files:
-* offcanvas-muscle.css
-* offcanvas-muscle.js
+```
+<link rel="stylesheet" href="path/to/offcanvas-muscle.css">
+<script src="path/to/offcanvas-muscle.js"></script>
+```
 
 #### HTML
 The following are the mandatory HTML code that Offcanvas Muscle needs to work
