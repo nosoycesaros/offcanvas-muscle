@@ -1,7 +1,7 @@
 # Offcanvas Muscle
-A responsive menu with vanilla javascript and CSS transitions. Looking for a simple and clean solution to create offcanvas left and right menus, we decide to create this little framework, feel free to expand and collaborate. It just works!
+A responsive menu with vanilla Javascript and CSS transitions. Looking for a simple and clean solution to create offcanvas left and right menus, we decide to create this little framework, feel free to expand and collaborate. It just works!
 
-<a href='http://owak.co/staging/offcanvas-muscle/' target="_blank">See our Demo</a>
+<a href='http://nosoycesaros.github.io/offcanvas-muscle/' target="_blank">See the Demo</a>
 
 ## Usage
 #### Files
