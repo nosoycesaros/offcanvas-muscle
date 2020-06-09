@@ -1,40 +1,30 @@
 # Offcanvas Muscle
 A responsive menu with vanilla Javascript and CSS transitions. Looking for a simple and clean solution to create offcanvas left and right menus, we decide to create this little framework, feel free to expand and collaborate. It just works!
 
-<a href='http://nosoycesaros.github.io/offcanvas-muscle/' target="_blank">See the Demo</a>
+[See the Demo](http://nosoycesaros.github.io/offcanvas-muscle/)
 
 ## Usage
-#### Files
-Include in your code the following files:
-```
-<link rel="stylesheet" href="path/to/offcanvas-muscle.css">
-<script src="path/to/offcanvas-muscle.js"></script>
+#### Javascript
+Later add this function when your DOM is ready:
+```js
+import OffcanvasMuscle from './offcanvas/offcanvas'
+
+const transactionTables = document.querySelectorAll('[data-toggle=offcanvas]')
+
+transactionTables.forEach(trigger => {
+  const menu = new OffcanvasMuscle(trigger)
+})
 ```
 
 #### HTML
 The following are the mandatory HTML code that Offcanvas Muscle needs to work
-```
-<ul class="offcanvas left" id="offcanvas-left-menu">
-  ...
-</ul>
+```html
+<nav class="offcanvas offcanvas--left" id="left-menu">
+...
+</nav>
 
-<div class="offcanvas-site-wrap">
-  <!-- Left Menu Button -->
-  <a id="trigger-left-menu" class="nav-button left" offcanvas-menu="offcanvas-left-menu"></a>
-  
-  <!-- insert the rest of your page markup here -->
-</div>
-```
-#### Javascript
-Later add this function when your DOM is ready:
-```
-/**
- * Create a new object OffcanvasMuscle for each menu
- */
-var offcanvasMenu = new OffcanvasMuscle({
-  menu: "offcanvas-left-menu",
-  button: "trigger-left-menu"
-});
+<a class="offcanvas__trigger offcanvas__trigger--left" data-target='left-menu' data-toggle="offcanvas">
+</a>
 ```
 
 ## Gratitude
