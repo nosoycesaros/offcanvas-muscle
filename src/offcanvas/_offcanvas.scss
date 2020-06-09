@@ -1,0 +1,75 @@
+$open-size: 25%;
+$transition-time: 0.4s;
+
+.offcanvas {
+    background: $secondary-color;
+    list-style: none;
+    width: $open-size;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    padding: 15px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    transition: all $transition-time;
+
+    &--left {
+        left: -$open-size;
+
+        &.offcanvas--open {
+            left: 0;
+        }
+    }
+    &--right {
+        left: 100%;
+
+        &.offcanvas--open {
+            left: #{100% - $open-size};
+        }
+    }
+    
+    &__link {
+      color: white;
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    &__trigger {
+        position: absolute;
+        top: 15px;
+        width: 24px;
+        height: 20px;
+        cursor: pointer;
+        background-image: url();
+        background-size: contain;
+      
+        &--left {
+          left: 15px;
+        }
+      
+        &--right {
+          right: 15px;
+        }
+      }
+}
+
+.wrap {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    transition: all $transition-time;
+
+    &--open-left {
+        left: $open-size;
+    }
+    &--open-right {
+        left: -$open-size;
+    }
+}

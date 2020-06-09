@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Demo</title>
+    <link rel="stylesheet" href="./src/styles.scss">
+</head>
+
+<body>
+    <!-- A Left Menu -->
+    <nav class="offcanvas offcanvas--left" id="left-menu">
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+    </nav>
+
+    <!-- A Right Menu -->
+    <nav class="offcanvas offcanvas--right" id="right-menu">
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+        <a class="offcanvas__link" href="#">Menu Item</a>
+    </nav>
+
+    <section class="wrap">
+        <!-- Left Menu Button -->
+        <a class="offcanvas__trigger offcanvas__trigger--left" data-target='left-menu' data-toggle="offcanvas">
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px'
+                y='0px' width='24px' height='20px' viewBox='0 0 30 30' enable-background='new 0 0 30 30'
+                xml:space='preserve'>
+                <rect width='30' height='6' />
+                <rect y='24' width='30' height='6' />
+                <rect y='12' width='30' height='6' /></svg>
+        </a>
+        <!-- Right Menu Button -->
+        <a class="offcanvas__trigger offcanvas__trigger--right" data-target='right-menu' data-toggle="offcanvas">
+            <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px'
+                y='0px' width='24px' height='20px' viewBox='0 0 30 30' enable-background='new 0 0 30 30'
+                xml:space='preserve'>
+                <rect width='30' height='6' />
+                <rect y='24' width='30' height='6' />
+                <rect y='12' width='30' height='6' /></svg>
+        </a>
+
+        <!-- insert the rest of your page markup here -->
+    </section>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
