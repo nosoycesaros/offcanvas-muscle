@@ -8,13 +8,13 @@ export default class OffcanvasMuscle {
   }
 
   toggleMenu() {
-    const page = document.querySelector('.wrap')
+    const page = document.querySelector('.offcanvas__wrap')
     
     this.menu.classList.toggle('offcanvas--open')
     page.classList.toggle(
       this.menu.classList.contains('offcanvas--left') ?
-        'wrap--open-left' :
-        'wrap--open-right'
+        'offcanvas__wrap--open-left' :
+        'offcanvas__wrap--open-right'
     )
   }
 }

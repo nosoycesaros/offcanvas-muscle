@@ -1,7 +1,7 @@
-$open-size: 25%;
-$transition-time: 0.4s;
-
 .offcanvas {
+    $open-size: 25%;
+    $transition-time: 0.4s;
+
     background: $secondary-color;
     list-style: none;
     width: $open-size;
@@ -29,12 +29,12 @@ $transition-time: 0.4s;
             left: #{100% - $open-size};
         }
     }
-    
+
     &__link {
-      color: white;
-      display: block;
-      margin-bottom: 10px;
-      text-decoration: none;
+        color: white;
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
     }
 
     &__trigger {
@@ -45,31 +45,31 @@ $transition-time: 0.4s;
         cursor: pointer;
         background-image: url();
         background-size: contain;
-      
+
         &--left {
-          left: 15px;
+            left: 15px;
         }
-      
+
         &--right {
-          right: 15px;
+            right: 15px;
         }
-      }
-}
-
-.wrap {
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    bottom: 100%;
-    left: 0;
-    z-index: 1;
-    transition: all $transition-time;
-
-    &--open-left {
-        left: $open-size;
     }
-    &--open-right {
-        left: -$open-size;
+
+    &__wrap {
+        min-width: 100%;
+        min-height: 100%;
+        position: relative;
+        top: 0;
+        bottom: 100%;
+        left: 0;
+        z-index: 1;
+        transition: all $transition-time;
+
+        &--open-left {
+            left: $open-size;
+        }
+        &--open-right {
+            left: -$open-size;
+        }
     }
 }
