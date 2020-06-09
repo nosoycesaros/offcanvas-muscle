@@ -1,7 +1,7 @@
 import OffcanvasMuscle from './offcanvas/offcanvas'
 
-const transactionTables = document.querySelectorAll('[data-toggle=offcanvas]')
+const offcanvasTriggers = document.querySelectorAll('[data-toggle=offcanvas]')
 
-transactionTables.forEach(trigger => {
+offcanvasTriggers.forEach(trigger => {
   const menu = new OffcanvasMuscle(trigger)
 })
